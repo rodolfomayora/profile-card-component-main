@@ -1,3 +1,27 @@
 :root {
+  /* Primary Colors */
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+
+  /* Basis Tipografy */
   font-family: "Kumbh Sans";
+  font-size: 18px;
 }
+
+.page-body {
+  min-width: 374px;
+  min-height: 100%;
+  background-color: hsl(0, 0%, 100%);
+}
+
+
+
+
+/* Contribution
+=================================== */
+
+.attribution { font-size: 11px; text-align: center; }
+
+.attribution a {color: hsl(228, 45%, 44%); }
