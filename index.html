@@ -1,35 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Profile card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link name="theme-color" content="#19a2ae" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/index.css" />
 </head>
-<body>
-  Victor Crest
-  26
-  London
+<body class="page-body">
+  <main class="main-content">
+    <article class="profile-card">
+      <div class="user-info">
+        <div class="image-container">
+          <div class="image-middle-layer">
+            <div class="image-wrapper">
+              <img class="user-image" src="images/image-victor.jpg" alt="Profile User Image" />
+            </div>
+          </div>
+        </div>
+        <div class="user-info__name">
+          <strong class="info-bold">Victor Crest</strong> 26
+        </div>
+        <address class="user-info__address">London</address>
+      </div>
 
-  80K
-  Followers
+      <div class="social-info">
+        <div class="social-info__column">
+          <span class="cocial-info__counter info-bold">80K</span>
+          <span class="social-info__label">Followers</span>
+        </div>
+        
+        <div class="social-info__column">
+          <span class="cocial-info__counter info-bold">803K</span>
+          <span class="social-info__label">Likes</span>
 
-  803K
-  Likes
+        </div>
+        <div class="social-info__column">
+          <span class="cocial-info__counter info-bold">1.4K</span>
+          <span class="social-info__label">Photos</span>
+        </div>
+      </div>
+    </article>
+  </main>
 
-  1.4K
-  Photos
   <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Challenge by
+    <a
+      href="https://www.frontendmentor.io?ref=challenge"
+      target="_blank"
+      rel="external noopener noreferrer"
+    >
+      Frontend Mentor
+    </a>.
+    <br />
+    Coded by
+    <a
+      href="https://rodolfomayora.github.io/mi-portafolio/"
+      target="_blank"
+      rel="external noopener noreferrer"
+    >
+      Rodolfo Mayora Pereda
+    </a>.
   </div>
 </body>
 </html>
