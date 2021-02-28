@@ -6,6 +6,7 @@
   --very-dark-blue   : hsl(229, 23%, 23%);
   --dark-grayish-blue: hsl(227, 10%, 46%);
   --dark-gray        : hsl(0, 0%, 59%);
+  --light-gray       : hsl(0, 0%, 89%);
   --white            : hsl(0, 0%, 100%);
 
   /* Basis Tipografy */
@@ -35,7 +36,6 @@
   align-items: center;
   height: 100vh;
   background: var(--dark-cyan);
-
 }
 
 .profile-card {
@@ -47,16 +47,16 @@
 
 .profile-card .user-info {
   position: relative;
-  padding-top: 100%;
-  border-bottom: 1px solid var(--dark-gray);
+  padding-top: 88%;
+  border-bottom: 1px solid var(--light-gray );
   background:
     url("../images/bg-pattern-card.svg")
     no-repeat
     scroll
-    18% top / 125%;
+    center top / 107%;
 }
 
-.profile-card .user-info__image,
+.profile-card .image-container,
 .profile-card .user-info__name,
 .profile-card .user-info__address {
   position: absolute;
@@ -64,20 +64,70 @@
   transform: translateX(50%);
 }
 
-.profile-card .user-info__image {
-  top: 32%;
-  width: 108px;
-  border: solid 6px var(--white);
+.profile-card .image-container {
+  top: 30%;
+  width: 30%;
+  border: solid 5px var(--white);
   border-radius: 50%;
+  overflow: hidden;
 }
 
-.profile-card .user-info__name { bottom: 16%; }
+.profile-card .image-middle-layer {
+  position: relative;
+  max-width: 100%;
+  padding-top: 100%;
+}
+
+.profile-card .image-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--dark-gray);
+}
+
+.profile-card .user-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profile-card .user-info__address { font-size: 13px; }
+
+.profile-card .user-info__name { bottom: 18%; }
 
 .profile-card .user-info__address {
-  bottom: 9%;
+  bottom: 8%;
+  font-size: 13px;
   font-style: normal;
-  font-size: 14px;
+  color: var(--dark-grayish-blue);
 }
+
+
+
+.profile-card .social-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.profile-card .social-info__column {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-card .social-info__label {
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  margin-top: 6px;
+}
+
 
 /* Contribution
 =================================== */
