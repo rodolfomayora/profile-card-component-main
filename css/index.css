@@ -1,8 +1,12 @@
+
+
+
 /* General
 =================================== */
 :root {
   /* Primary Colors */
   --dark-cyan        : hsl(185, 75%, 39%);
+  --light-cyan       : hsl(179deg 74% 57%);
   --very-dark-blue   : hsl(229, 23%, 23%);
   --dark-grayish-blue: hsl(227, 10%, 46%);
   --dark-gray        : hsl(0, 0%, 59%);
@@ -35,7 +39,6 @@
 =================================== */
 .main-content {
   position: relative;
-  min-width: 374px;
   max-width: 1920px;
   flex-grow: 1;
   display: flex;
@@ -172,18 +175,43 @@
 }
 
 
-/* Contribution
+/* Atribution
 =================================== */
 .attribution {
   position: fixed;
   z-index: 1;
   bottom: 0;
   left: 0;
+  right: 0;
+  padding-top: 8px;
+  padding-bottom: 4px;
   font-size: 11px;
   text-align: center;
+  color: var(--white);
+
+  background-color: var(--very-dark-blue);
 }
 
-.attribution a {color: hsl(228, 45%, 44%); }
+.attribution a {
+  color: var(--light-cyan);
+  line-height: 16px;
+}
+
+.attribution a:after {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background:
+  url("../images/external-link.svg")
+  scroll
+  no-repeat
+  center / cover;
+}
+
+.attribution a:hover {
+  color: var(--light-gray);
+}
 
 
 /* Media queries
