@@ -1,6 +1,6 @@
-# Frontend Mentor - Article preview component
+# Frontend Mentor - Profile card component
 
-This is a solution to the [Profile card component coding challenge](https://www.frontendmentor.io/challenges/article-preview-component-dYBN_pYFT)
+This is a solution to the [Profile card component coding challenge](https://www.frontendmentor.io/challenges/profile-card-component-cfArpWshJ)
 
 
 ### Screenshot
